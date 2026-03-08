@@ -6,15 +6,7 @@
 - サブコマンド (`run`, `exec` など) の導線
 - CLI層と実行ロジック層の分離
 
-## 今日やったこと
+## 学びなど
 
-- 
-
-## 理解したこと
-
-- 
-
-## 次に確認すること
-
-- 
-
+- clapとは、Command Line Argument Parser for Rustの略であり、RustでCLIを作るときに利用する定番のクレートである
+- 導入方法は、 `cargo add clap --features derive (-p cmd)`
