@@ -6,15 +6,10 @@
 - `config.json` の扱い
 - 設定値のバリデーション方針
 
-## 今日やったこと
+## 学びなど
 
-- 
-
-## 理解したこと
-
-- 
-
-## 次に確認すること
-
-- 
-
+- container構造体、state構造体を作成
+- stateの構造体はOCI Specに由来している
+- stateの構造体の仕様: https://github.com/opencontainers/runtime-spec/blob/main/runtime.md
+- containerの構造体はおそらくファイルとかの保存場所を持っておきたいからだと思う
+- #[]はRustのattribute記法で、コードに追加情報を与えたり、マクロとして動いたりするもの
