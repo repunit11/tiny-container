@@ -13,3 +13,6 @@
 - stateの構造体の仕様: https://github.com/opencontainers/runtime-spec/blob/main/runtime.md
 - containerの構造体はおそらくファイルとかの保存場所を持っておきたいからだと思う
 - #[]はRustのattribute記法で、コードに追加情報を与えたり、マクロとして動いたりするもの
+- Ubuntuのイメージをpullするスクリプトを作成した
+- runc specを実行することでイメージを実行するための手順書を作成する
+- これはOCI bundleが完成した状態である
