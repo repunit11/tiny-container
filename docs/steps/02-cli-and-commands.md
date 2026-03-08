@@ -36,3 +36,7 @@ enum SubCommands {
     },
 }
 ```
+
+- serde, oci-specのライブラリを追加
+- serde: シリアライズ/デシリアライズ用のライブラリ
+- oci-spec: OCI仕様を扱うライブラリ
