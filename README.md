@@ -12,7 +12,7 @@
 
 このリポジトリは学習目的で以下のプロジェクトを模写しています。
 
-- Reference: `https://github.com/n4mlz/tiny-youki`
+- Reference: https://github.com/n4mlz/tiny-youki
 - Original Author: `n4mlz`
 
 最終的に参考元とほぼ同一のコードになる可能性があります。
