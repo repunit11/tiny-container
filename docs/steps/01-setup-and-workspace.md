@@ -2,10 +2,15 @@
 
 ## 対象
 
-- プロジェクト初期化
-- Cargo workspace 構成
-- `cmd` / `libcontainer` のクレート分割
-- LICENSEの追加
+プロジェクトを単一バイナリから workspace 構成へ広げ、CLI の入口を作るまでの区間です。
+
+- `97b5182` `:tada: initial commit`
+- `6d3f460` `:gear: workspace を使うように`
+- `606baec` `:sparkles: workspace を追加`
+- `1b0b0e7` `:gear: LICENSE を追加`
+- `60b6cf2` `:truck: clap を導入`
+- `1c8b68e` `:sparkles: サブコマンドを扱えるように`
+- `656b7c9` `:recycle: refactor`
 
 ## 学びなど
 

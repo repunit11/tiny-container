@@ -2,9 +2,16 @@
 
 ## 対象
 
-- `clap` を使った引数処理
-- サブコマンド (`run`, `exec` など) の導線
-- CLI層と実行ロジック層の分離
+`libcontainer` の最小構成を用意し、`Container` と `State` を定義して `state.json` を保存できるようにする区間です。
+
+- `e40e566` `:package: パッケージを追加`
+- `151e471` `:sparkles: container と state の定義`
+- `fa328d7` `:sparkles: Ubuntu のイメージを pull するスクリプトを追加`
+- `80658c6` `:gear: bundle を ignore`
+- `fc0f32d` `:package: serde_json を追加`
+- `81c1a15` `:sparkles: 定数の定義`
+- `35c9876` `:zap: state の実装`
+- `c86d518` `:sparkles: container の実装`
 
 ## 学びなど
 
