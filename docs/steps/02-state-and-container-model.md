@@ -47,3 +47,16 @@ enum SubCommands {
 - serde, oci-specのライブラリを追加
 - serde: シリアライズ/デシリアライズ用のライブラリ
 - oci-spec: OCI仕様を扱うライブラリ
+- container構造体、state構造体を作成
+- stateの構造体はOCI Specに由来している
+- stateの構造体の仕様: https://github.com/opencontainers/runtime-spec/blob/main/runtime.md
+- containerの構造体はおそらくファイルとかの保存場所を持っておきたいからだと思う
+- #[]はRustのattribute記法で、コードに追加情報を与えたり、マクロとして動いたりするもの
+- Ubuntuのイメージをpullするスクリプトを作成した
+- runc specを実行することでイメージを実行するための手順書を作成する
+- これはOCI bundleが完成した状態である
+- serde_jsonを追加した。これは、rustのデータ構造とJSONのデータ構造を変換するために利用するライブラリ
+- serialize: rustの構造体⇒JSON出力
+- deserialize: JSON⇒rustの構造体
+- impl: structで構造体のフィールドを定義する、implでメソッドの処理を実装する
+- コンストラクタ、saveメソッドを実装
