@@ -17,3 +17,29 @@
 
 libcontainer: コンテナを起動・隔離・制御するための低レイヤ実装
 CLIで起動して、プリントとコンテナの起動ができるようにした
+
+### Unixドメインソケットの実装
+
+構造体：UnixSocketServer、UnixSocketClient、UnixSocketConnection
+UnixSocketServer：標準ライブラリのUnixListenerをラップ
+- コンストラクタ
+  - pathで受け取った場所にソケットファイルを作る
+- accept
+  - クライアントが接続してくるのを待つ
+  - 接続を認識したらUnixSocketConnectionを作成
+
+UnixSocketClient
+- connect
+  - 指定されたpathのソケットに接続
+  - 接続できたらUnixSocketConnectionを作成
+
+UnixSocketConnection：標準ライブラリのUnixStreamをラップ
+- コンストラクタ
+  - UnixStreamを受け取ってUnixSocketConnectionを作る
+  - Mutexを使ってロックを掛ける
+- send
+  - 文字列を相手に送るメソッド
+  - Mutexでガードしてstreamに書き込み
+- receive
+  - 相手から送られてきたデータを受け取る
+  - ストリームをロックしてbufferで読み込む
